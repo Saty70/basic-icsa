@@ -8,7 +8,7 @@ nlp = spacy.load("en_core_web_sm")
 responses = {
     "greeting": "Hello! How can I assist you today?",
     "goodbye": "Goodbye! Have a great day!",
-    "thank_you": "You're welcome! If you have any other questions, feel free to ask."
+    "thank you": "You're welcome! If you have any other questions, feel free to ask."
 }
 
 # Serve the HTML file
@@ -31,7 +31,7 @@ def chat():
     elif any([token.lemma_ == "bye" for token in doc]):
         response = responses["goodbye"]
     elif any([token.lemma_ == "thank" for token in doc]):
-        response = responses["thank_you"]
+        response = responses["thank you"]
     else:
         response = "I'm sorry, I didn't understand that. Could you please rephrase?"
 
