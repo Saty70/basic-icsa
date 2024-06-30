@@ -26,7 +26,7 @@ git clone https://github.com/yourusername/basic-icsa.git
 ```bash
 cd basic-icsa
 ```
-<b>If you can have venv folder then delete it</b>
+<b>If you have venv folder then delete it</b>
 
 ### Step 2: Set Up a Virtual Environment
 
